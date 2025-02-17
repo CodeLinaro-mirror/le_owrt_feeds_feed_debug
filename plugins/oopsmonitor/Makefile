@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=oopsmonitor
-PKG_VERSION:=sah-next_v1.1.0
+PKG_VERSION:=sah-next_v1.2.0
 SHORT_DESCRIPTION:=Plugin to track kernel oopses
 
-PKG_SOURCE:=oopsmonitor-sah-next_v1.1.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/core/plugins/oopsmonitor/-/archive/sah-next_v1.1.0
-PKG_HASH:=2765960a1eb3daf46cf7f8ea4e9b64825d64ab5bf2e4e0a98c3714eaa197d60e
-PKG_BUILD_DIR:=$(BUILD_DIR)/oopsmonitor-sah-next_v1.1.0
+PKG_SOURCE:=oopsmonitor-sah-next_v1.2.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/core/plugins/oopsmonitor/-/archive/sah-next_v1.2.0
+PKG_HASH:=43d0afd1646080d7962f92e3e1d3fe194ba8b77c62fbb4762a76033142f0f4bb
+PKG_BUILD_DIR:=$(BUILD_DIR)/oopsmonitor-sah-next_v1.2.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
