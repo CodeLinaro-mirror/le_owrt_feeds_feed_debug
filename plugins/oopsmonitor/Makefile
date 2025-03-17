@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=oopsmonitor
-PKG_VERSION:=sah-next_v1.3.0
+PKG_VERSION:=sah-next_v1.4.0
 SHORT_DESCRIPTION:=Plugin to track kernel oopses
 
-PKG_SOURCE:=oopsmonitor-sah-next_v1.3.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/core/plugins/oopsmonitor/-/archive/sah-next_v1.3.0
-PKG_HASH:=530c6173aefbc3c98bb0a10510a0bd0fcb002df5b25b08c9755f1d1f9f400e6a
-PKG_BUILD_DIR:=$(BUILD_DIR)/oopsmonitor-sah-next_v1.3.0
+PKG_SOURCE:=oopsmonitor-sah-next_v1.4.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/core/plugins/oopsmonitor/-/archive/sah-next_v1.4.0
+PKG_HASH:=a2976b9b3a56f917d4ccb99f19390fcbff1fcaf400cde5bcdfba15a26cc4f050
+PKG_BUILD_DIR:=$(BUILD_DIR)/oopsmonitor-sah-next_v1.4.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -38,6 +38,7 @@ define Package/$(PKG_NAME)
   DEPENDS += +libsahtrace
   DEPENDS += +amxrt
   DEPENDS += +libfiletransfer
+  DEPENDS += +mod-dmext
   MENU:=1
 endef
 
