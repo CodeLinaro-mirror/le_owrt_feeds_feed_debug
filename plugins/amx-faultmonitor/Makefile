@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amx-faultmonitor
-PKG_VERSION:=sah-next_v1.1.0
+PKG_VERSION:=sah-next_v1.2.0
 SHORT_DESCRIPTION:=Plugin to track and log faults in userspace programs
 
-PKG_SOURCE:=faultmonitor-sah-next_v1.1.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/core/plugins/faultmonitor/-/archive/sah-next_v1.1.0
-PKG_HASH:=d5259b9359ff32ef05b5cf407ec95b842c6a0d4125dba9f71a7d5c86b921b47b
-PKG_BUILD_DIR:=$(BUILD_DIR)/faultmonitor-sah-next_v1.1.0
+PKG_SOURCE:=faultmonitor-sah-next_v1.2.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/core/plugins/faultmonitor/-/archive/sah-next_v1.2.0
+PKG_HASH:=a627e821bcbbee0bc80c8cda693c4088d9c6f9d9238cd4d96ca9db7c0cf0b9cf
+PKG_BUILD_DIR:=$(BUILD_DIR)/faultmonitor-sah-next_v1.2.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
