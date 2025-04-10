@@ -1,13 +1,15 @@
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
+# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/core/plugins/faultmonitor/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amx-faultmonitor
-PKG_VERSION:=sah-next_v1.2.0
+PKG_VERSION:=sah-next_v1.3.0
 SHORT_DESCRIPTION:=Plugin to track and log faults in userspace programs
 
-PKG_SOURCE:=faultmonitor-sah-next_v1.2.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/core/plugins/faultmonitor/-/archive/sah-next_v1.2.0
-PKG_HASH:=a627e821bcbbee0bc80c8cda693c4088d9c6f9d9238cd4d96ca9db7c0cf0b9cf
-PKG_BUILD_DIR:=$(BUILD_DIR)/faultmonitor-sah-next_v1.2.0
+PKG_SOURCE:=faultmonitor-sah-next_v1.3.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/core/plugins/faultmonitor/-/archive/sah-next_v1.3.0
+PKG_HASH:=7283217603b20fbe9b375286ecaa41c9af27edf38db36f0b26215d67cba70b33
+PKG_BUILD_DIR:=$(BUILD_DIR)/faultmonitor-sah-next_v1.3.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -15,6 +17,7 @@ PKG_LICENSE_FILES:=LICENSE
 COMPONENT:=amx-faultmonitor
 
 PKG_RELEASE:=1
+PKG_BUILD_DEPENDS += libamxrt
 
 define SAHInit/Install
 	install -d ${PKG_INSTALL_DIR}/etc/rc.d/
@@ -26,18 +29,21 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/$(PKG_NAME)
   CATEGORY:=prpl Foundation
-  SUBMENU:=Plugins
+  SUBMENU:=Ambiorix
   TITLE:=$(SHORT_DESCRIPTION)
   URL:=https://gitlab.com/prpl-foundation/components/core/plugins/faultmonitor
   DEPENDS += +libamxc
   DEPENDS += +libamxp
   DEPENDS += +libamxd
+  DEPENDS += +libamxj
   DEPENDS += +libamxo
   DEPENDS += +libsahtrace
   DEPENDS += +amxrt
   DEPENDS += +mod-dmext
   DEPENDS += +libcap-ng
   DEPENDS += +libfiletransfer
+  DEPENDS += +amxo-cg
+  DEPENDS += +yajl
   MENU:=1
 endef
 
