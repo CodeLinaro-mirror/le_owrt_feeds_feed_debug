@@ -1,13 +1,15 @@
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
+# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/core/plugins/oopsmonitor/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=oopsmonitor
-PKG_VERSION:=sah-next_v1.4.0
+PKG_VERSION:=sah-next_v1.5.0
 SHORT_DESCRIPTION:=Plugin to track kernel oopses
 
-PKG_SOURCE:=oopsmonitor-sah-next_v1.4.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/core/plugins/oopsmonitor/-/archive/sah-next_v1.4.0
-PKG_HASH:=a2976b9b3a56f917d4ccb99f19390fcbff1fcaf400cde5bcdfba15a26cc4f050
-PKG_BUILD_DIR:=$(BUILD_DIR)/oopsmonitor-sah-next_v1.4.0
+PKG_SOURCE:=oopsmonitor-sah-next_v1.5.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/core/plugins/oopsmonitor/-/archive/sah-next_v1.5.0
+PKG_HASH:=20f5650cf06a590dd371a0562dec66aba0887d575e4bb808a058c63726613fd7
+PKG_BUILD_DIR:=$(BUILD_DIR)/oopsmonitor-sah-next_v1.5.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -26,7 +28,7 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/$(PKG_NAME)
   CATEGORY:=prpl Foundation
-  SUBMENU:=Plugins
+  SUBMENU:=Ambiorix
   TITLE:=$(SHORT_DESCRIPTION)
   URL:=https://gitlab.com/prpl-foundation/components/core/plugins/oopsmonitor
   DEPENDS += +libamxb
