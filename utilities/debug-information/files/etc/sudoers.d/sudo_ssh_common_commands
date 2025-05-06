@@ -14,7 +14,9 @@ Cmnd_Alias IPTABLES_COMMANDS = /usr/sbin/iptables -L -t filter -nv, \
 Cmnd_Alias MONITORING_COMMANDS = /bin/dmesg, \
                         /bin/cat /proc/slabinfo, \
                         /bin/opkg list-installed, \
-                        /usr/bin/du / -d 1 -h
+                        /usr/bin/du -hs *, \
+                        /usr/sbin/hostapd_cli -p /var/run/hostapd -i *, \
+                        /usr/sbin/wpa_cli -p /var/run/wpa_supplicant -i *
 
 # Allow the ssh_group group to run commands without a password
 %ssh_group ALL=(ALL) NOPASSWD: MONITORING_COMMANDS
