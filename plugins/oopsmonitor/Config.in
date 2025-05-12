@@ -11,9 +11,13 @@ config SAH_AMX_OOPSMONITOR
     bool "Build the oopsmonitor plugin"
     default y
 
-config SAH_AMX_OOPSMONITOR_ORDER
-    int "Start up order"
+config SAH_AMX_OOPSMONITOR_START_ORDER
+    int "Oopsmonitor plugin start up order"
     default 99
+
+config SAH_AMX_OOPSMONITOR_STOP_ORDER
+    int "Oopsmonitor plugin shutdown order"
+    default 89
 
 config SAH_AMX_OOPSMONITOR_RUN_AS_USER
     string "User will be used for the OOPSMONITOR plugin"
