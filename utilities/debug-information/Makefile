@@ -1,13 +1,15 @@
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
+# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/utilities/debug-information/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=debug-information
-PKG_VERSION:=sah-next_v0.4.0
+PKG_VERSION:=sah-next_v0.4.1
 SHORT_DESCRIPTION:=Scripts to provide debug Information for a running system
 
-PKG_SOURCE:=debug-information-sah-next_v0.4.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/utilities/debug-information/-/archive/sah-next_v0.4.0
-PKG_HASH:=199384aa4349dc26582fee12640c0e4f31e1ded10a063aec55b7c43f68950900
-PKG_BUILD_DIR:=$(BUILD_DIR)/debug-information-sah-next_v0.4.0
+PKG_SOURCE:=debug-information-sah-next_v0.4.1.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/utilities/debug-information/-/archive/sah-next_v0.4.1
+PKG_HASH:=180ffbaec62b1282e1bf1e84771c481f7295435562074e448b1f3160891f37de
+PKG_BUILD_DIR:=$(BUILD_DIR)/debug-information-sah-next_v0.4.1
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -26,7 +28,7 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/$(PKG_NAME)
   CATEGORY:=prpl Foundation
-  SUBMENU:=Utilities
+  SUBMENU:=Ambiorix
   TITLE:=$(SHORT_DESCRIPTION)
   URL:=https://gitlab.com/prpl-foundation/components/utilities/debug-information
   DEPENDS += +procps-ng
