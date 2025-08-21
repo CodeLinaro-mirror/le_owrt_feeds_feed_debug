@@ -35,7 +35,7 @@ define Package/$(PKG_NAME)
   DEPENDS += +procps-ng-pmap
   DEPENDS += +procps-ng-ps
   DEPENDS += +lua-amx
-  DEPENDS += +lua
+  DEPENDS += +lua5.3
   MENU:=1
 endef
 
