@@ -1,0 +1,20 @@
+config PACKAGE_debug-information
+    tristate
+    select SAH_AMX_DEBUG_INFORMATION
+
+if PACKAGE_debug-information
+
+menu "Select debug-information build options"
+    depends on PACKAGE_debug-information
+
+config SAH_AMX_DEBUG_INFORMATION
+    bool "Include the library and main script for debuging a system"
+    default y
+
+config SAH_AMX_DEBUG_INFORMATION_LUA_VERSION
+    string "Lua version that will be used"
+    default "5.3"
+
+endmenu
+
+endif
