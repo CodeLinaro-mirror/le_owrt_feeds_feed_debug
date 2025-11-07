@@ -3,13 +3,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=debug-information
-PKG_VERSION:=sah-next_v0.6.3
+PKG_VERSION:=sah-next_v0.6.4
 SHORT_DESCRIPTION:=Scripts to provide debug Information for a running system
 
-PKG_SOURCE:=debug-information-sah-next_v0.6.3.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/utilities/debug-information/-/archive/sah-next_v0.6.3
-PKG_HASH:=30dda39e801902bf8e259f9a41791665b36d465f6e483119a111546ae3fbc324
-PKG_BUILD_DIR:=$(BUILD_DIR)/debug-information-sah-next_v0.6.3
+PKG_SOURCE:=debug-information-sah-next_v0.6.4.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/utilities/debug-information/-/archive/sah-next_v0.6.4
+PKG_HASH:=fb2afb0df675028a59380f6cde1980110c95280393a2ae513da3697429a2458e
+PKG_BUILD_DIR:=$(BUILD_DIR)/debug-information-sah-next_v0.6.4
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -20,8 +20,8 @@ PKG_RELEASE:=1
 
 define SAHInit/Install
 	install -d ${PKG_INSTALL_DIR}/etc/rc.d/
-	ln -sfr ${PKG_INSTALL_DIR}/etc/init.d/boot_measure ${PKG_INSTALL_DIR}/etc/rc.d/S02boot_measure
-	ln -sfr ${PKG_INSTALL_DIR}/etc/init.d/boot_measure ${PKG_INSTALL_DIR}/etc/rc.d/K02boot_measure
+	ln -sfr ${PKG_INSTALL_DIR}/etc/init.d/boot_measure ${PKG_INSTALL_DIR}/etc/rc.d/S12boot_measure
+	ln -sfr ${PKG_INSTALL_DIR}/etc/init.d/boot_measure ${PKG_INSTALL_DIR}/etc/rc.d/K12boot_measure
 endef
 
 include $(INCLUDE_DIR)/package.mk
