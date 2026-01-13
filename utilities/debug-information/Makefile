@@ -3,13 +3,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=debug-information
-PKG_VERSION:=sah-next-4.1_v0.1.0
+PKG_VERSION:=sah-next-4.1_v0.1.1
 SHORT_DESCRIPTION:=Scripts to provide debug Information for a running system
 
-PKG_SOURCE:=debug-information-sah-next-4.1_v0.1.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/utilities/debug-information/-/archive/sah-next-4.1_v0.1.0
-PKG_HASH:=b0da552f78573212e3bb6bda679e90f181395f2318c05f0b0546903945b2d13e
-PKG_BUILD_DIR:=$(BUILD_DIR)/debug-information-sah-next-4.1_v0.1.0
+PKG_SOURCE:=debug-information-sah-next-4.1_v0.1.1.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/utilities/debug-information/-/archive/sah-next-4.1_v0.1.1
+PKG_HASH:=211af1e33ac42f6590e0be9e4f0dc1ee4d478b817d7ace857081e4921d569792
+PKG_BUILD_DIR:=$(BUILD_DIR)/debug-information-sah-next-4.1_v0.1.1
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
