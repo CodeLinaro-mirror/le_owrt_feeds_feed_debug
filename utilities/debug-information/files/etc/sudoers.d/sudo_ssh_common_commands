@@ -19,6 +19,6 @@ Cmnd_Alias MONITORING_COMMANDS = /bin/dmesg, \
                         /usr/sbin/wpa_cli -p /var/run/wpa_supplicant -i *
 
 # Allow the ssh_group group to run commands without a password
-%ssh_group ALL=(ALL) NOPASSWD: MONITORING_COMMANDS
+%ssh_group ALL=(root) NOPASSWD: MONITORING_COMMANDS
 
-%ssh_group ALL=(ALL) NOPASSWD: IPTABLES_COMMANDS
+%ssh_group ALL=(root) NOPASSWD: IPTABLES_COMMANDS
