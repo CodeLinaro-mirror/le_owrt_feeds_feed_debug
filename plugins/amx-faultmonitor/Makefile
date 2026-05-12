@@ -1,16 +1,16 @@
-# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.40.3)
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.40.6)
 # WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/core/plugins/faultmonitor/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amx-faultmonitor
-RAW_VERSION:=sah-next-4.1_v1.0.0
+RAW_VERSION:=sah-next-4.1_v1.0.1
 PKG_VERSION:=$(if $(filter v0% v1% v2% v3% v4% v5% v6% v7% v8% v9%,$(RAW_VERSION)),$(patsubst v%,%,$(RAW_VERSION)),$(RAW_VERSION))
 SHORT_DESCRIPTION:=Plugin to track and log faults in userspace programs
 
-PKG_SOURCE:=faultmonitor-sah-next-4.1_v1.0.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/core/plugins/faultmonitor/-/archive/sah-next-4.1_v1.0.0
-PKG_HASH:=2debc6b430c98ab5488b1b89b331640aa2b36fc7881ea6659369c84d479c2b95
-PKG_BUILD_DIR:=$(BUILD_DIR)/faultmonitor-sah-next-4.1_v1.0.0
+PKG_SOURCE:=faultmonitor-sah-next-4.1_v1.0.1.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/core/plugins/faultmonitor/-/archive/sah-next-4.1_v1.0.1
+PKG_HASH:=2cb61fb8ee8fca1e374472563dac5483726099b881e1584a084d1044aabfc303
+PKG_BUILD_DIR:=$(BUILD_DIR)/faultmonitor-sah-next-4.1_v1.0.1
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -68,7 +68,9 @@ define Build/InstallDev
 endef
 
 define Package/$(PKG_NAME)/install
-	$(CP) $(PKG_INSTALL_DIR)/* $(1)/
+	if [ -d $(PKG_INSTALL_DIR) ]; then \
+		$(CP) $(PKG_INSTALL_DIR)/* $(1)/; \
+	fi
 	if [ -d ./files ]; then \
 		$(CP) ./files/* $(1)/; \
 	fi
