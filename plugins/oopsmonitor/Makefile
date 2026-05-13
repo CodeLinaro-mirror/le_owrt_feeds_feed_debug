@@ -1,16 +1,16 @@
-# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version master)
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.40.6)
 # WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/core/plugins/oopsmonitor/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=oopsmonitor
-RAW_VERSION:=sah-next-4.2_v1.0.1
+RAW_VERSION:=sah-next-4.2_v1.0.2
 PKG_VERSION:=$(if $(filter v0% v1% v2% v3% v4% v5% v6% v7% v8% v9%,$(RAW_VERSION)),$(patsubst v%,%,$(RAW_VERSION)),$(RAW_VERSION))
 SHORT_DESCRIPTION:=Plugin to track kernel oopses
 
-PKG_SOURCE:=oopsmonitor-sah-next-4.2_v1.0.1.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/core/plugins/oopsmonitor/-/archive/sah-next-4.2_v1.0.1
-PKG_HASH:=8909bf94f960c6db6874b605e838e0cd2ab2b6f1c1ffb4507fcbead6bc0959ce
-PKG_BUILD_DIR:=$(BUILD_DIR)/oopsmonitor-sah-next-4.2_v1.0.1
+PKG_SOURCE:=oopsmonitor-sah-next-4.2_v1.0.2.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/core/plugins/oopsmonitor/-/archive/sah-next-4.2_v1.0.2
+PKG_HASH:=73ff02ea8f6d247b32138651320de77eadac30551afd040614cadddeeaf79243
+PKG_BUILD_DIR:=$(BUILD_DIR)/oopsmonitor-sah-next-4.2_v1.0.2
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
